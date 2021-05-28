@@ -167,27 +167,30 @@ article h1{
 	font-size: 40px;
 	font-family: sans-serif;
 }
-article p{
+/*article p{
 	margin-top: 20px;
 	font-size: 18px;
 	color: #3c3c3c;
-}
+}*/
 article img {
 	width: 100%;
 	margin-top: 20px;
 }
 section{
-	margin: 170px;
+	width: 95%;
 	margin-top: 20px;
 	margin-bottom: 20px;
-}
-.center h1{
-	text-align: center;
 }
 footer{
 	width: 100%;
 	background: #34495e;
 	color: white;
+}
+#cajas{
+	margin: 40px 0 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
 }
 .contener-footer-all{
 	width: 100%;
@@ -265,12 +268,25 @@ footer{
 	color: #c7c7c7;
 }
 .fondo{
-	width: 80%;
-	margin: 100px;
-	height: 400px;
+	width: 100%;
+	margin-top: 80px;
 
 	/*background-image: url(asist/img/foto.jpg);*/
 	background-image: linear-gradient rgba(0,0,0,0.0) rgba(0,0,0,0.0);
+}
+@media screen and (max-width: 800px){
+	#cajas .caja-1{
+		padding: 30px 20px;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+@media screen and (max-width: 800px){
+	#cajas .caja-2{
+		padding: 30px 20px;
+		width: 100%;
+		margin-bottom: 10px;
+	}
 }
 @media screen and (max-width: 1100px){
 	.contener-footer{
